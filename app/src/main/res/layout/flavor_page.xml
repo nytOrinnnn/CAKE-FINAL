@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/backBtn"
+        android:layout_width="44dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="36dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/back" />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="74dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="36dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/kike" />
+
+    <ImageView
+        android:id="@+id/fHead"
+        android:layout_width="300dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/chooseflav" />
+
+    <!-- Cake Preview -->
+
+    <com.example.cakev3.CakePreviewView
+        android:id="@+id/cakePreview"
+        android:layout_width="140dp"
+        android:layout_height="120dp"
+        android:layout_marginEnd="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fHead"
+        app:layout_constraintVertical_bias="0.916" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="329dp"
+        android:layout_height="360dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fHead"
+        app:srcCompat="@drawable/backgroundnew" />
+
+    <LinearLayout
+        android:layout_width="330dp"
+        android:layout_height="360dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView6"
+        app:layout_constraintEnd_toEndOf="@+id/imageView6"
+        app:layout_constraintStart_toStartOf="@+id/imageView6"
+        app:layout_constraintTop_toTopOf="@+id/imageView6">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="14dp">
+
+            <ImageView android:id="@+id/cchocolate" android:layout_width="110dp" android:layout_height="150dp"
+                android:layout_marginStart="20dp" android:visibility="gone" app:srcCompat="@drawable/chocolatechek" />
+            <ImageView android:id="@+id/chocolate" android:layout_width="110dp" android:layout_height="150dp"
+                android:layout_marginStart="20dp" app:srcCompat="@drawable/chocolate" />
+            <ImageView android:id="@+id/cvanilla" android:layout_width="110dp" android:layout_height="150dp"
+                android:layout_marginStart="20dp" android:visibility="gone" app:srcCompat="@drawable/vanillachek" />
+            <ImageView android:id="@+id/vanilla" android:layout_width="110dp" android:layout_height="150dp"
+                android:layout_marginStart="20dp" app:srcCompat="@drawable/vanilla" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="14dp">
+
+            <ImageView android:id="@+id/cstrawberry" android:layout_width="110dp" android:layout_height="150dp"
+                android:layout_marginStart="20dp" android:visibility="gone" app:srcCompat="@drawable/strawberrychek" />
+            <ImageView android:id="@+id/strawberry" android:layout_width="110dp" android:layout_height="150dp"
+                android:layout_marginStart="20dp" app:srcCompat="@drawable/strawberry" />
+            <ImageView android:id="@+id/cmatcha" android:layout_width="110dp" android:layout_height="150dp"
+                android:layout_marginStart="20dp" android:visibility="gone" app:srcCompat="@drawable/matchachek" />
+            <ImageView android:id="@+id/matcha" android:layout_width="110dp" android:layout_height="150dp"
+                android:layout_marginStart="20dp" app:srcCompat="@drawable/matcha" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:text="TOTAL: 0"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView6"
+        app:layout_constraintVertical_bias="0.421" />
+
+    <ImageView
+        android:id="@+id/nextBtn"
+        android:layout_width="101dp"
+        android:layout_height="51dp"
+        android:layout_marginEnd="272dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/total"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/next" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

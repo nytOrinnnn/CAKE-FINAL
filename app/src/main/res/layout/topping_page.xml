@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/backBtn"
+        android:layout_width="44dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="36dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/back" />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="74dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="36dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/kike" />
+
+    <ImageView
+        android:id="@+id/fHead"
+        android:layout_width="300dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/toppings" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="329dp"
+        android:layout_height="419dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fHead"
+        app:srcCompat="@drawable/backgroundnew" />
+
+    <LinearLayout
+        android:layout_width="330dp"
+        android:layout_height="418dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView6"
+        app:layout_constraintEnd_toEndOf="@+id/imageView6"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/imageView6"
+        app:layout_constraintTop_toTopOf="@+id/imageView6"
+        app:layout_constraintVertical_bias="1.0">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="20dp">
+
+
+            <ImageView
+                android:id="@+id/csprinkles"
+                android:layout_width="120dp"
+                android:layout_height="170dp"
+                android:layout_marginStart="20dp"
+                android:visibility="gone"
+                app:srcCompat="@drawable/sprinkleschek" />
+
+            <ImageView
+                android:id="@+id/sprinkles"
+                android:layout_width="120dp"
+                android:layout_height="170dp"
+                android:layout_marginStart="20dp"
+                app:srcCompat="@drawable/sprinkles" />
+
+            <ImageView
+                android:id="@+id/cchocolatechips"
+                android:layout_width="120dp"
+                android:layout_height="170dp"
+                android:layout_marginStart="20dp"
+                android:visibility="gone"
+                app:srcCompat="@drawable/chocochipschek" />
+
+            <ImageView
+                android:id="@+id/chocolatechips"
+                android:layout_width="120dp"
+                android:layout_height="170dp"
+                android:layout_marginStart="20dp"
+                app:srcCompat="@drawable/chocochips" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="20dp">
+
+            <ImageView
+                android:id="@+id/cfruits"
+                android:layout_width="120dp"
+                android:layout_height="170dp"
+                android:layout_marginStart="20dp"
+                android:visibility="gone"
+                app:srcCompat="@drawable/fruitschek" />
+
+            <ImageView
+                android:id="@+id/fruits"
+                android:layout_width="120dp"
+                android:layout_height="170dp"
+                android:layout_marginStart="20dp"
+                app:srcCompat="@drawable/fruits" />
+
+            <ImageView
+                android:id="@+id/ccandy"
+                android:layout_width="120dp"
+                android:layout_height="170dp"
+                android:layout_marginStart="20dp"
+                android:visibility="gone"
+                app:srcCompat="@drawable/candychek" />
+
+            <ImageView
+                android:id="@+id/candy"
+                android:layout_width="120dp"
+                android:layout_height="170dp"
+                android:layout_marginStart="20dp"
+                app:srcCompat="@drawable/candy" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TOTAL: 0"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.13"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView6"
+        app:layout_constraintVertical_bias="0.39" />
+
+    <!-- Live Cake Preview -->
+
+    <ImageView
+        android:id="@+id/nextBtn"
+        android:layout_width="101dp"
+        android:layout_height="51dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.132"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/total"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/finishorder" />
+
+    <com.example.cakev3.CakePreviewView
+        android:id="@+id/cakePreview"
+        android:layout_width="140dp"
+        android:layout_height="120dp"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.988" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
